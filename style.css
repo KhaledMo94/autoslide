@@ -1,0 +1,73 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,.next{
+    cursor: pointer;
+    margin: 0 10px;
+    user-select: none;
+    position: absolute;
+    top:50%;
+    width: auto;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: 1s ease;
+    color: white;
+}
+.next{
+    right: 0;
+}
+.prev:hover,.next:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.text{
+    color : brown;
+    font-size: large;
+    position: absolute;
+    bottom: 10px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    align-items: center;
+}
+
+.dots{
+    text-align: center;
+}
+
+.dot{
+    cursor: pointer;
+    background-color: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,.dot:hover{
+    background-color: rgb(14, 43, 44);
+}
+
+@keyframes fade {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+}
+
+.fade{
+    animation: fade 1s;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Automatic Slider Show</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="mySlides fade">
+            <img src="/slider1.jpeg" alt="slider1" style="width:100%">
+            <div class="text">Any optional text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/slider2.jpg" alt="slider1" style="width:100%">
+            <div class="text">Any optional text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/slider3.jpg" alt="slider1" style="width:100%">
+            <div class="text">Any optional text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/slider4.jpg" alt="slider1" style="width:100%">
+            <div class="text">Any optional text</div>
+        </div>
+
+        <a onclick="changeSlides(-1)" class="prev">&#10094;</a>
+        <a onclick="changeSlides(1)" class="next">&#10095;</a>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
